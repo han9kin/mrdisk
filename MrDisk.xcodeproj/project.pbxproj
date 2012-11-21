@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* AppDelegate.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		CF05E7C5139E87800016231E /* LoginPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF05E7C4139E87800016231E /* LoginPanel.m */; };
+		CF05E7CB139E88DF0016231E /* LoginPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF05E7CA139E88DF0016231E /* LoginPanel.xib */; };
+		CF05E7E1139E8F8A0016231E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF05E7E0139E8F8A0016231E /* Localizable.strings */; };
+		CF06F006138D6CDD0067ABE0 /* libssh.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF06F004138D6CDD0067ABE0 /* libssh.4.dylib */; };
+		CF06F007138D6CF00067ABE0 /* libssh.4.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = CF06F004138D6CDD0067ABE0 /* libssh.4.dylib */; };
+		CF213887165CE1090068E789 /* MRFS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF213884165CE0D00068E789 /* MRFS.framework */; };
+		CF213888165CE20E0068E789 /* MRFS.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = CF213884165CE0D00068E789 /* MRFS.framework */; };
+		CF213896165CECC30068E789 /* README in Resources */ = {isa = PBXBuildFile; fileRef = CF213895165CECC30068E789 /* README */; };
+		CF2498B41389F86E00FA98E6 /* DiskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2498B31389F86E00FA98E6 /* DiskManager.m */; };
+		CF2498C31389FD9000FA98E6 /* DiskManager.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2498C21389FD9000FA98E6 /* DiskManager.xib */; };
+		CF249905138A11A500FA98E6 /* FileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = CF249904138A11A500FA98E6 /* FileSystem.m */; };
+		CF249936138A19DA00FA98E6 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF249935138A19DA00FA98E6 /* TableView.m */; };
+		CF249AB9138A74F400FA98E6 /* Keychain.m in Sources */ = {isa = PBXBuildFile; fileRef = CF249AB8138A74F400FA98E6 /* Keychain.m */; };
+		CF249ACC138A76A800FA98E6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF249ACB138A76A800FA98E6 /* Security.framework */; };
+		CF249B14138A776E00FA98E6 /* NSURL+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF249B13138A776E00FA98E6 /* NSURL+Additions.m */; };
+		CF249CC2138B95FC00FA98E6 /* DiskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF249CC1138B95FC00FA98E6 /* DiskCell.m */; };
+		CF92C5851382566500EAFC10 /* SSHFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = CF92C5841382566500EAFC10 /* SSHFileSystem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF213883165CE0D00068E789 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF21387A165CE0CF0068E789 /* MRFS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CF165D99137BDBD5000C435A;
+			remoteInfo = MRFS;
+		};
+		CF213885165CE0D00068E789 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF21387A165CE0CF0068E789 /* MRFS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1107320486CEB800E47090;
+			remoteInfo = LoopbackFS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF4FF32113820BE400EF5011 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CF213888165CE20E0068E789 /* MRFS.framework in Copy Frameworks */,
+				CF06F007138D6CF00067ABE0 /* libssh.4.dylib in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* MrDisk_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MrDisk_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* MrDisk-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MrDisk-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* MrDisk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MrDisk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF05E7C3139E87800016231E /* LoginPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPanel.h; sourceTree = "<group>"; };
+		CF05E7C4139E87800016231E /* LoginPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPanel.m; sourceTree = "<group>"; };
+		CF05E7C8139E88DA0016231E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/LoginPanel.xib; sourceTree = "<group>"; };
+		CF05E7DE139E8F830016231E /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CF06F003138D6CDD0067ABE0 /* libssh_threads.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssh_threads.4.dylib; path = lib/libssh_threads.4.dylib; sourceTree = "<group>"; };
+		CF06F004138D6CDD0067ABE0 /* libssh.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssh.4.dylib; path = lib/libssh.4.dylib; sourceTree = "<group>"; };
+		CF21387A165CE0CF0068E789 /* MRFS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MRFS.xcodeproj; path = mrfs/MRFS.xcodeproj; sourceTree = "<group>"; };
+		CF213895165CECC30068E789 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		CF2498B21389F86E00FA98E6 /* DiskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskManager.h; sourceTree = "<group>"; };
+		CF2498B31389F86E00FA98E6 /* DiskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiskManager.m; sourceTree = "<group>"; };
+		CF2498BB1389FB7700FA98E6 /* ObjCUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCUtil.h; sourceTree = "<group>"; };
+		CF2498C01389FD7F00FA98E6 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/DiskManager.xib; sourceTree = "<group>"; };
+		CF249903138A11A500FA98E6 /* FileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileSystem.h; sourceTree = "<group>"; };
+		CF249904138A11A500FA98E6 /* FileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileSystem.m; sourceTree = "<group>"; };
+		CF249934138A19DA00FA98E6 /* TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableView.h; sourceTree = "<group>"; };
+		CF249935138A19DA00FA98E6 /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableView.m; sourceTree = "<group>"; };
+		CF249AB7138A74F400FA98E6 /* Keychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keychain.h; sourceTree = "<group>"; };
+		CF249AB8138A74F400FA98E6 /* Keychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keychain.m; sourceTree = "<group>"; };
+		CF249ACB138A76A800FA98E6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CF249B12138A776E00FA98E6 /* NSURL+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Additions.h"; sourceTree = "<group>"; };
+		CF249B13138A776E00FA98E6 /* NSURL+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Additions.m"; sourceTree = "<group>"; };
+		CF249CC0138B95FC00FA98E6 /* DiskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskCell.h; sourceTree = "<group>"; };
+		CF249CC1138B95FC00FA98E6 /* DiskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiskCell.m; sourceTree = "<group>"; };
+		CF92C5831382566500EAFC10 /* SSHFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHFileSystem.h; sourceTree = "<group>"; };
+		CF92C5841382566500EAFC10 /* SSHFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHFileSystem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				CF249ACC138A76A800FA98E6 /* Security.framework in Frameworks */,
+				CF213887165CE1090068E789 /* MRFS.framework in Frameworks */,
+				CF06F006138D6CDD0067ABE0 /* libssh.4.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CF2498B81389FB3D00FA98E6 /* Additions */,
+				CF2498B91389FB5300FA98E6 /* Application */,
+				CF2498BA1389FB5B00FA98E6 /* FileSystem */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* MrDisk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* MrDisk */ = {
+			isa = PBXGroup;
+			children = (
+				CF4FF2E21382099500EF5011 /* Externals */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = MrDisk;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* MrDisk_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* MrDisk-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				CF05E7E0139E8F8A0016231E /* Localizable.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				CF2498C21389FD9000FA98E6 /* DiskManager.xib */,
+				CF05E7CA139E88DF0016231E /* LoginPanel.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				CF249ACB138A76A800FA98E6 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF06EFD9138D631B0067ABE0 /* libssh */ = {
+			isa = PBXGroup;
+			children = (
+				CF213895165CECC30068E789 /* README */,
+				CF06F004138D6CDD0067ABE0 /* libssh.4.dylib */,
+				CF06F003138D6CDD0067ABE0 /* libssh_threads.4.dylib */,
+			);
+			path = libssh;
+			sourceTree = "<group>";
+		};
+		CF21387B165CE0CF0068E789 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF213884165CE0D00068E789 /* MRFS.framework */,
+				CF213886165CE0D00068E789 /* LoopbackFS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF2498B81389FB3D00FA98E6 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				CF2498BB1389FB7700FA98E6 /* ObjCUtil.h */,
+				CF249B12138A776E00FA98E6 /* NSURL+Additions.h */,
+				CF249B13138A776E00FA98E6 /* NSURL+Additions.m */,
+				CF249934138A19DA00FA98E6 /* TableView.h */,
+				CF249935138A19DA00FA98E6 /* TableView.m */,
+				CF249AB7138A74F400FA98E6 /* Keychain.h */,
+				CF249AB8138A74F400FA98E6 /* Keychain.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		CF2498B91389FB5300FA98E6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3D80F4B6AC300CF3369 /* AppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* AppDelegate.m */,
+				CF2498B21389F86E00FA98E6 /* DiskManager.h */,
+				CF2498B31389F86E00FA98E6 /* DiskManager.m */,
+				CF249CC0138B95FC00FA98E6 /* DiskCell.h */,
+				CF249CC1138B95FC00FA98E6 /* DiskCell.m */,
+				CF05E7C3139E87800016231E /* LoginPanel.h */,
+				CF05E7C4139E87800016231E /* LoginPanel.m */,
+				CF249903138A11A500FA98E6 /* FileSystem.h */,
+				CF249904138A11A500FA98E6 /* FileSystem.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		CF2498BA1389FB5B00FA98E6 /* FileSystem */ = {
+			isa = PBXGroup;
+			children = (
+				CF92C5831382566500EAFC10 /* SSHFileSystem.h */,
+				CF92C5841382566500EAFC10 /* SSHFileSystem.m */,
+			);
+			name = FileSystem;
+			sourceTree = "<group>";
+		};
+		CF4FF2E21382099500EF5011 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				CF21387A165CE0CF0068E789 /* MRFS.xcodeproj */,
+				CF06EFD9138D631B0067ABE0 /* libssh */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* MrDisk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MrDisk" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				CF4FF32113820BE400EF5011 /* Copy Frameworks */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				CF4FF33513820C4800EF5011 /* Delete Framework Headers */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MrDisk;
+			productInstallPath = "$(HOME)/Applications";
+			productName = MrDisk;
+			productReference = 8D1107320486CEB800E47090 /* MrDisk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "";
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MrDisk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* MrDisk */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CF21387B165CE0CF0068E789 /* Products */;
+					ProjectRef = CF21387A165CE0CF0068E789 /* MRFS.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* MrDisk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CF213884165CE0D00068E789 /* MRFS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MRFS.framework;
+			remoteRef = CF213883165CE0D00068E789 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CF213886165CE0D00068E789 /* LoopbackFS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = LoopbackFS.app;
+			remoteRef = CF213885165CE0D00068E789 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				CF2498C31389FD9000FA98E6 /* DiskManager.xib in Resources */,
+				CF05E7CB139E88DF0016231E /* LoginPanel.xib in Resources */,
+				CF05E7E1139E8F8A0016231E /* Localizable.strings in Resources */,
+				CF213896165CECC30068E789 /* README in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CF4FF33513820C4800EF5011 /* Delete Framework Headers */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Delete Framework Headers";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find $TARGET_BUILD_DIR/$FRAMEWORKS_FOLDER_PATH -name Headers -prune -exec rm -rf {} \\;\nfind $TARGET_BUILD_DIR/$FRAMEWORKS_FOLDER_PATH -name PrivateHeaders -prune -exec rm -rf {} \\;\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* AppDelegate.m in Sources */,
+				CF92C5851382566500EAFC10 /* SSHFileSystem.m in Sources */,
+				CF2498B41389F86E00FA98E6 /* DiskManager.m in Sources */,
+				CF249905138A11A500FA98E6 /* FileSystem.m in Sources */,
+				CF249936138A19DA00FA98E6 /* TableView.m in Sources */,
+				CF249AB9138A74F400FA98E6 /* Keychain.m in Sources */,
+				CF249B14138A776E00FA98E6 /* NSURL+Additions.m in Sources */,
+				CF249CC2138B95FC00FA98E6 /* DiskCell.m in Sources */,
+				CF05E7C5139E87800016231E /* LoginPanel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		CF05E7CA139E88DF0016231E /* LoginPanel.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF05E7C8139E88DA0016231E /* English */,
+			);
+			name = LoginPanel.xib;
+			sourceTree = "<group>";
+		};
+		CF05E7E0139E8F8A0016231E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF05E7DE139E8F830016231E /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CF2498C21389FD9000FA98E6 /* DiskManager.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF2498C01389FD7F00FA98E6 /* English */,
+			);
+			name = DiskManager.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MrDisk_Prefix.pch;
+				INFOPLIST_FILE = "MrDisk-Info.plist";
+				PRODUCT_NAME = MrDisk;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MrDisk_Prefix.pch;
+				INFOPLIST_FILE = "MrDisk-Info.plist";
+				PRODUCT_NAME = MrDisk;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Externals/libssh/include\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Externals/libssh/lib\"";
+				PREBINDING = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Externals/libssh/include\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Externals/libssh/lib\"";
+				PREBINDING = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MrDisk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MrDisk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,11 @@
+/*
+ *  Localizable.strings
+ *  MrDisk
+ *
+ *  Created by han9kin on 2011-06-08.
+ *
+ */
+
+"Login to %@"        = "Login to %@";
+"Login to %@ failed" = "Login to %@ failed";
+"Password:"          = "Password:";

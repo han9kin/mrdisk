@@ -19,7 +19,6 @@
 		CF06F007138D6CF00067ABE0 /* libssh.4.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = CF06F004138D6CDD0067ABE0 /* libssh.4.dylib */; };
 		CF213887165CE1090068E789 /* MRFS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF213884165CE0D00068E789 /* MRFS.framework */; };
 		CF213888165CE20E0068E789 /* MRFS.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = CF213884165CE0D00068E789 /* MRFS.framework */; };
-		CF213896165CECC30068E789 /* README in Resources */ = {isa = PBXBuildFile; fileRef = CF213895165CECC30068E789 /* README */; };
 		CF2498B41389F86E00FA98E6 /* DiskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2498B31389F86E00FA98E6 /* DiskManager.m */; };
 		CF2498C31389FD9000FA98E6 /* DiskManager.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2498C21389FD9000FA98E6 /* DiskManager.xib */; };
 		CF249905138A11A500FA98E6 /* FileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = CF249904138A11A500FA98E6 /* FileSystem.m */; };
@@ -328,7 +327,6 @@
 				CF2498C31389FD9000FA98E6 /* DiskManager.xib in Resources */,
 				CF05E7CB139E88DF0016231E /* LoginPanel.xib in Resources */,
 				CF05E7E1139E8F8A0016231E /* Localizable.strings in Resources */,
-				CF213896165CECC30068E789 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

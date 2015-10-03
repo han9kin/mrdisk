@@ -108,8 +108,15 @@ static int32_t gDefaultTime = 0;
     int       sMethod;
     int       sRet;
 
+    if (!mSession)
+    {
+        return NO;
+    }
+
     sPassword = [Keychain passwordForUsername:[[self url] stringWithoutPath] service:@"MrDisk" error:NULL];
-    sMethod   = ssh_userauth_list(mSession, NULL);
+
+    ssh_userauth_none(mSession, NULL);
+    sMethod = ssh_userauth_list(mSession, NULL);
 
     if (sMethod & SSH_AUTH_METHOD_NONE)
     {
